@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path:
-    repoURL:
-    targetRevision:
+    path: ./argo-apps/
+    repoURL: https://github.com/andreitsimakhovich/argo-flux.git
+    targetRevision: 0.1.0
   syncPolicy:
     automated: {}
