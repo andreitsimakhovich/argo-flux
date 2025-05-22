@@ -240,6 +240,7 @@ spec:
           emptyDir: {}
         
         - name: config
+          configMap:
             name: prometheus-rules
             items:
               - key: prometheus.yaml
