@@ -243,8 +243,8 @@ spec:
           configMap:
             name: prometheus-rules
             items:
-              - key: prometheus.yml
-                path: prometheus.yml
+              - key: prometheus.yaml
+                path: prometheus.yaml
               - key: rules/cpu-overload-rule.yaml
                 path: rules/cpu-overload-rule.yaml
 ---
