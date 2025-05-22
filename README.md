@@ -12,4 +12,4 @@ https://drive.google.com/file/d/1U-nllLaF3sH2EwJQVoiHD8Ch05U5jst6/view?usp=shari
 https://github.com/andreitsimakhovich/argo-flux.git   
  - application objects: app.yaml; jenkins.yaml
 - add this repository as project for your applications: ./argo-apps
-https://drive.google.com/file/d/1adP4UnuinEWJraZEDno3yQ4-elVt61pL/view?usp=sharing
+https://drive.google.com/file/d/1adP4UnuinEWJraZEDno3yQ4-elVt61pL/view?usp=sharin11g

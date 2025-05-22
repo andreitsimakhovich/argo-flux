@@ -227,9 +227,6 @@ spec:
               mountPath: /etc/prometheus/
             - name: prometheus-storage-volume
               mountPath: /prometheus/
-            - name: config
-              mountPath: /etc/prometheus
-
       volumes:
         - name: prometheus-config-volume
           configMap:
@@ -238,15 +235,6 @@ spec:
   
         - name: prometheus-storage-volume
           emptyDir: {}
-        
-        - name: config
-          configMap:
-            name: prometheus-rules
-            items:
-              - key: prometheus.yml
-                path: prometheus.yml
-              - key: rules/cpu-overload-rule.yaml
-                path: rules/cpu-overload-rule.yaml
 ---
 apiVersion: v1
 kind: Service
