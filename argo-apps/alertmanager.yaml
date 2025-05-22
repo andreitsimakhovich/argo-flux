@@ -10,4 +10,3 @@ receivers:
       - send_resolved: true
         channel: '#Github_notirier'
         api_url: 'https://hooks.slack.com/services/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'
-
