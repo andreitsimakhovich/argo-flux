@@ -38,4 +38,15 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: flux-system 
+
+---
+apiVersion: helm.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: grafana
+  namespace: flux-system
+spec:
+  interval: 10m
+  url: https://grafana.github.io/helm-charts
+  timeout: 1m
