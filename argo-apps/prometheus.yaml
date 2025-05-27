@@ -59,13 +59,12 @@ data:
           summary: High Memory Usage
 
       - alert: CPUOverloadPerPod
-        expr: sum by(pod) (rate(container_cpu_usage_seconds_total{image!="",container!="POD"}[1m])) > 0.5
-        for: 2m
+        expr: sum by(pod) (rate(container_cpu_usage_seconds_total{image!="",container!="POD"}[1m])) > 0.1
+        for: 1m
         labels:
           severity: critical
         annotations:
-          summary: "CPU overload detected on pod {{ $labels.pod }}"
-          description: "Pod {{ $labels.pod }} is using more than 50% CPU for over 2 minutes."
+          summary: CPU overload detected on pod
   prometheus.yml: |-
     global:
       scrape_interval: 5s
